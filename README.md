@@ -9,5 +9,11 @@
 - Animations: Eye-catching animations to elevate the user experience.
 -------
 
-🚀 Getting Started
+🚀 Prerequisites
 -------
+
+- Xcode 13 or later
+- Basic knowledge of Swift and SwiftUI
+- macOS 12.0 or later
+-------
+
