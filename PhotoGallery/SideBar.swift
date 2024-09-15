@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct SideBar: View {
+struct SideBar: View {    
     var body: some View {
         VStack {
             
