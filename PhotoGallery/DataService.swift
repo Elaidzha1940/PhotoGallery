@@ -56,7 +56,7 @@ struct sideBars: Identifiable {
     var insdex: Int
 }
 
-let sideBars = [
+let sidebars = [
     sideBars(icon: "square.stack", title: "Favorite", tab: .Favorite, insdex: 0),
     sideBars(icon: "magnifyingglass", title: "Home", tab: .Home, insdex: 1),
     sideBars(icon: "house", title: "Card", tab: .Card, insdex: 2),
@@ -80,7 +80,7 @@ struct sideBars1: Identifiable {
     var insdex: Int
 }
 
-let sideBars1 = [
+let sidebars1 = [
     sideBars1(icon: "house.fill", title: "Home", tab: .Home, insdex: 0),
     sideBars1(icon: "creditcard.fill", title: "Notification", tab: .Notification, insdex: 1),
     sideBars1(icon: "heart.fill", title: "Favorite", tab: .Favorite, insdex: 2),
