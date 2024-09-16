@@ -23,6 +23,7 @@ struct SearchBar: View {
                 Image(systemName: "magnifyingglass")
                     .bold()
                     .font(.title2)
+                    .matchedGeometryEffect(id: "icon", in: namespace)
                     .foregroundStyle(.black)
             }
             .foregroundStyle(.white)
@@ -41,6 +42,7 @@ struct SearchBar: View {
                     Image(systemName: "magnifyingglass")
                         .bold()
                         .font(.title2)
+                        .matchedGeometryEffect(id: "icon", in: namespace)
                         .foregroundStyle(.black)
                         .padding(.leading, 10)
                 }
