@@ -1,9 +1,11 @@
+//  /*
 //
-//  SelectedImageView.swift
-//  PhotoGallery
+//  Project: PhotoGallery
+//  File: SelectedImageView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 17.09.2024
 //
-//  Created by Elaidzha Shchukin on 17.09.2024.
-//
+//  */
 
 import SwiftUI
 

@@ -1,9 +1,11 @@
+//  /*
 //
-//  TabBarView.swift
-//  PhotoGallery
+//  Project: PhotoGallery
+//  File: TabBarView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 17.09.2024
 //
-//  Created by Elaidzha Shchukin on 17.09.2024.
-//
+//  */
 
 import SwiftUI
 
