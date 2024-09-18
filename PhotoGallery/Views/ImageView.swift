@@ -26,6 +26,7 @@ struct ImageView: View {
                             .frame(width: 130, height: 200)
                             .cornerRadius(20)
                     }
+                    PexelsView()
                 }
             }
             
@@ -43,5 +44,16 @@ struct PexelsView: View {
             .stroke(lineWidth: 1)
             .frame(width: 130, height: 200)
             .padding(.leading)
+            .overlay(alignment: .leading) {
+                VStack {
+                    Text("Pexels")
+                        .bold()
+                        .font(.title)
+                    Text("Images from Slapsh Screen")
+                        .bold()
+                        .font(.system(size: 14))
+                        .frame(width: 120)
+                }
+            }
     }
 }
