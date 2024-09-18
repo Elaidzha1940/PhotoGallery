@@ -44,7 +44,7 @@ struct PexelsView: View {
             .stroke(lineWidth: 1)
             .frame(width: 130, height: 200)
             .padding(.leading)
-            .overlay(alignment: .leading) {
+            .overlay(alignment: .trailing) {
                 VStack {
                     Text("Pexels")
                         .bold()
@@ -53,7 +53,19 @@ struct PexelsView: View {
                         .bold()
                         .font(.system(size: 14))
                         .frame(width: 120)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                    
+                    HStack {
+                        Text("Try it now")
+                            .bold()
+                            .font(.title2)
+                        Image(systemName: "arrow.right")
+                            .bold()
+                    }
                 }
+                .padding(.leading, 5)
+                .padding(.vertical)
             }
     }
 }
