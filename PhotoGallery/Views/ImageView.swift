@@ -26,7 +26,7 @@ struct ImageView: View {
                             .frame(width: 130, height: 200)
                             .cornerRadius(20)
                     }
-                    PexelsView()
+                    SplashView()
                 }
             }
             
@@ -38,7 +38,7 @@ struct ImageView: View {
     ImageView()
 }
 
-struct PexelsView: View {
+struct SplashView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 20, style: .continuous)
             .stroke(lineWidth: 1)
