@@ -46,10 +46,10 @@ struct SplashView: View {
             .padding(.leading)
             .overlay(alignment: .trailing) {
                 VStack {
-                    Text("Pexels")
+                    Text("SPLASH")
                         .bold()
                         .font(.title)
-                    Text("Images from Slapsh Screen")
+                    Text("All Images and Videos on Slapsh Screen are free to use.")
                         .bold()
                         .font(.system(size: 14))
                         .frame(width: 120)
@@ -57,7 +57,7 @@ struct SplashView: View {
                     Spacer()
                     
                     HStack {
-                        Text("Try it now")
+                        Text("Try now")
                             .bold()
                             .font(.title2)
                         Image(systemName: "arrow.right")

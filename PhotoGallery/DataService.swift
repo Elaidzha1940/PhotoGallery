@@ -12,6 +12,14 @@ import Foundation
 class ImageSelection: ObservableObject {
     @Published var selectedData: dataMode? = nil
     @Published var showingSheet: Bool = false
+    
+    func getHeight(_ index: Int) -> CGFloat {
+        return index % 2 == 0 ? 180 : 300
+    }
+    
+    func getHeight1(_ index: Int) -> CGFloat {
+        return index % 1 == 2 ? 180 : 300
+    }
 }
 
 struct dataMode: Identifiable, Equatable {
@@ -25,11 +33,14 @@ struct dataMode: Identifiable, Equatable {
 }
 
 var theImages = [
-    dataMode(name: "Hey", title: "Hey"),
-    dataMode(name: "Hey", title: "Hey"),
-    dataMode(name: "Hey", title: "Hey"),
-    dataMode(name: "Hey", title: "Hey"),
-    dataMode(name: "Hey", title: "Hey")
+    dataMode(name: "2", title: "Hey"),
+    dataMode(name: "1", title: "Hey"),
+    dataMode(name: "3", title: "Hey"),
+    dataMode(name: "6", title: "Hey"),
+    dataMode(name: "7", title: "Hey"),
+    dataMode(name: "4", title: "Hey"),
+    dataMode(name: "5", title: "Hey"),
+    dataMode(name: "8", title: "Hey")
 ]
 
 var theImages1 = [
