@@ -50,6 +50,12 @@ struct ImageGridView: View {
             }
         }
         .padding(.horizontal, 10)
+        .sheet(isPresented: $imageSelection.showingSheet) {
+            SelectedImageView(selectedData: imageSelection.selectedData ?? theImages[0])
+                .presentationDetents([.fraction(0.64),.large])
+                .presentationDragIndicator(.visible)
+            
+        }
     }
 }
 

@@ -70,15 +70,15 @@ struct sideBars: Identifiable {
     var icon: String
     var title: String
     var tab: TabIcon
-    var insdex: Int
+    var index: Int
 }
 
 let sidebars = [
-    sideBars(icon: "square.stack", title: "Favorite", tab: .Favorite, insdex: 0),
-    sideBars(icon: "magnifyingglass", title: "Home", tab: .Home, insdex: 1),
-    sideBars(icon: "house", title: "Card", tab: .Card, insdex: 2),
-    sideBars(icon: "star", title: "Purchases", tab: .Purchases, insdex: 3),
-    sideBars(icon: "person", title: "Notification", tab: .Notification, insdex: 4),
+    sideBars(icon: "square.stack", title: "Favorite", tab: .Favorite, index: 0),
+    sideBars(icon: "magnifyingglass", title: "Home", tab: .Home, index: 1),
+    sideBars(icon: "house", title: "Card", tab: .Card, index: 2),
+    sideBars(icon: "star", title: "Purchases", tab: .Purchases, index: 3),
+    sideBars(icon: "person", title: "Notification", tab: .Notification, index: 4),
 ]
 
 enum TabIcon: String {
@@ -94,15 +94,15 @@ struct sideBars1: Identifiable {
     var icon: String
     var title: String
     var tab: TabIcon1
-    var insdex: Int
+    var index: Int
 }
 
 let sidebars1 = [
-    sideBars1(icon: "house.fill", title: "Home", tab: .Home, insdex: 0),
-    sideBars1(icon: "creditcard.fill", title: "Notification", tab: .Notification, insdex: 1),
-    sideBars1(icon: "heart.fill", title: "Favorite", tab: .Favorite, insdex: 2),
-    sideBars1(icon: "cart.fill.badge.plus", title: "Purchases", tab: .Purchases, insdex: 3),
-    sideBars1(icon: "bell.badge.fill", title: "Favorite", tab: .Favorite, insdex: 4),
+    sideBars1(icon: "house.fill", title: "Home", tab: .Home, index: 0),
+    sideBars1(icon: "creditcard.fill", title: "Notification", tab: .Notification, index: 1),
+    sideBars1(icon: "heart.fill", title: "Favorite", tab: .Favorite, index: 2),
+    sideBars1(icon: "cart.fill.badge.plus", title: "Purchases", tab: .Purchases, index: 3),
+    sideBars1(icon: "bell.badge.fill", title: "Favorite", tab: .Favorite, index: 4),
 ]
 
 enum TabIcon1: String {

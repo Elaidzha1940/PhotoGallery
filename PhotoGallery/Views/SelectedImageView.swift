@@ -14,7 +14,7 @@ struct SelectedImageView: View {
     
     
     var body: some View {
-        VStack {
+        VStack(spacing: 5) {
             Image(selectedData.name)
                 .resizable()
                 .scaledToFill()
@@ -43,11 +43,22 @@ struct SelectedImageView: View {
                         .cornerRadius(18)
                     }
                 }
+                Text(selectedData.title)
+                    .font(.headline)
+                    .frame(height: 130)
+                    .frame(maxWidth: UIScreen.main.bounds.width)
+                    .padding(10)
+                    .background(.white)
+                    .cornerRadius(10)
+                    .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 0)
             }
+            .padding(.horizontal)
+            Spacer()
         }
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    SelectedImageView(selectedData: dataMode(name: "1", title: "iOS"))
+    SelectedImageView(selectedData: dataMode(name: "1", title: "Splash Screen"))
 }
