@@ -10,11 +10,44 @@
 import SwiftUI
 
 struct SelectedImageView: View {
+    var selectedData: dataMode
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(selectedData.name)
+                .resizable()
+                .scaledToFill()
+                .frame(maxWidth: UIScreen.main.bounds.width)
+                .frame(height: 300)
+                .clipped()
+            
+            VStack(alignment: .leading, spacing: 7) {
+                HStack(alignment: .bottom) {
+                    Text("Name")
+                        .bold()
+                        .font(.largeTitle)
+                    Spacer()
+                    Button {
+                        //
+                    } label: {
+                        HStack(spacing: 15) {
+                            Image(systemName: "arrow.down.circle")
+                                .font(.title2)
+                            Text("Download")
+                                .font(.title3)
+                        }
+                        .foregroundStyle(.white)
+                        .frame(width: 165, height: 45)
+                        .background(.black)
+                        .cornerRadius(18)
+                    }
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    SelectedImageView()
+    SelectedImageView(selectedData: dataMode(name: "1", title: "iOS"))
 }
