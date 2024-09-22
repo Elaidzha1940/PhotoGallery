@@ -39,6 +39,12 @@ struct TabBarView: View {
             }
             .frame(width: 23, height: 23)
         }
+        .frame(maxWidth: UIScreen.main.bounds.width - 40)
+        .frame(height: 73)
+        .background(.ultraThickMaterial)
+        .overlay(alignment: .topLeading) {
+            CustomCircleA(circleA: $progress)
+        }
     }
 }
 
