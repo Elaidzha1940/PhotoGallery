@@ -28,8 +28,8 @@ struct ImageView: View {
                     }
                     SplashView()
                 }
+                .padding(.horizontal)
             }
-            
         }
     }
 }
@@ -41,11 +41,11 @@ struct ImageView: View {
 struct SplashView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 20, style: .continuous)
-            .stroke(lineWidth: 1)
+            .stroke(lineWidth: 2)
             .frame(width: 130, height: 200)
-            .padding(.leading)
+            .padding(.leading, 4)
             .overlay(alignment: .trailing) {
-                VStack {
+                VStack(alignment: .leading) {
                     Text("SPLASH")
                         .bold()
                         .font(.title)

@@ -12,7 +12,6 @@ import SwiftUI
 struct SelectedImageView: View {
     var selectedData: dataMode
     
-    
     var body: some View {
         VStack(spacing: 5) {
             Image(selectedData.name)

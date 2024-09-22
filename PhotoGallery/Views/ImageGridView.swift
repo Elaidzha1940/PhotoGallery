@@ -41,7 +41,7 @@ struct ImageGridView: View {
                             Image(item.name)
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 180, height: imageSelection.getHeight1((theImages.firstIndex(of: item) ?? 0)))
+                                .frame(width: 180, height: imageSelection.getHeight((theImages2.firstIndex(of: item) ?? 0)))
                                 .cornerRadius(20)
                                 .padding(.vertical, 2)
                         }

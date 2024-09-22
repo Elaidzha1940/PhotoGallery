@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43050E62CA026E300E7F70C /* SideBarMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43050E52CA026E300E7F70C /* SideBarMenuView.swift */; };
+		E43050E82CA0273200E7F70C /* TabViewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43050E72CA0273200E7F70C /* TabViewView.swift */; };
 		E4705D292C997EDB00FFD849 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4705D282C997EDB00FFD849 /* ImageView.swift */; };
 		E4705D2B2C997EF300FFD849 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4705D2A2C997EF300FFD849 /* ImageGridView.swift */; };
 		E4705D2D2C997F1900FFD849 /* SelectedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4705D2C2C997F1900FFD849 /* SelectedImageView.swift */; };
@@ -14,7 +16,6 @@
 		E4705D312C997F3400FFD849 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4705D302C997F3400FFD849 /* HomeView.swift */; };
 		E4705D372C99CAFA00FFD849 /* NavigationS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4705D362C99CAFA00FFD849 /* NavigationS.swift */; };
 		E470F8E22C8E833500E55EEF /* PhotoGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470F8E12C8E833500E55EEF /* PhotoGalleryApp.swift */; };
-		E470F8E42C8E833500E55EEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470F8E32C8E833500E55EEF /* ContentView.swift */; };
 		E470F8E62C8E833600E55EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E470F8E52C8E833600E55EEF /* Assets.xcassets */; };
 		E470F8E92C8E833600E55EEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E470F8E82C8E833600E55EEF /* Preview Assets.xcassets */; };
 		E470F8F32C8E833600E55EEF /* PhotoGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470F8F22C8E833600E55EEF /* PhotoGalleryTests.swift */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E43050E52CA026E300E7F70C /* SideBarMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarMenuView.swift; sourceTree = "<group>"; };
+		E43050E72CA0273200E7F70C /* TabViewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewView.swift; sourceTree = "<group>"; };
 		E4705D282C997EDB00FFD849 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		E4705D2A2C997EF300FFD849 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
 		E4705D2C2C997F1900FFD849 /* SelectedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedImageView.swift; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		E4705D362C99CAFA00FFD849 /* NavigationS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationS.swift; sourceTree = "<group>"; };
 		E470F8DE2C8E833500E55EEF /* PhotoGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E470F8E12C8E833500E55EEF /* PhotoGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryApp.swift; sourceTree = "<group>"; };
-		E470F8E32C8E833500E55EEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E470F8E52C8E833600E55EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E470F8E82C8E833600E55EEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E470F8EE2C8E833600E55EEF /* PhotoGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,10 +93,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E43050E42CA0269C00E7F70C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E43050E52CA026E300E7F70C /* SideBarMenuView.swift */,
+				E43050E72CA0273200E7F70C /* TabViewView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
 		E470F8D52C8E833500E55EEF = {
 			isa = PBXGroup;
 			children = (
 				E470F8E02C8E833500E55EEF /* PhotoGallery */,
+				E43050E42CA0269C00E7F70C /* SideMenu */,
 				E4A83A4F2C98308A008EDA85 /* Animations */,
 				E470F8F12C8E833600E55EEF /* PhotoGalleryTests */,
 				E470F8FB2C8E833600E55EEF /* PhotoGalleryUITests */,
@@ -117,7 +129,6 @@
 			children = (
 				E470F8E12C8E833500E55EEF /* PhotoGalleryApp.swift */,
 				E49E7CCE2C8FBBFF000DAFA9 /* DataService.swift */,
-				E470F8E32C8E833500E55EEF /* ContentView.swift */,
 				E4A83A502C98311D008EDA85 /* Views */,
 				E470F8E52C8E833600E55EEF /* Assets.xcassets */,
 				E470F8E72C8E833600E55EEF /* Preview Content */,
@@ -305,15 +316,16 @@
 			files = (
 				E49E7CD32C8FBC64000DAFA9 /* SideBar.swift in Sources */,
 				E4A83A522C983175008EDA85 /* CustomCircleA.swift in Sources */,
+				E43050E82CA0273200E7F70C /* TabViewView.swift in Sources */,
 				E49E7CCF2C8FBBFF000DAFA9 /* DataService.swift in Sources */,
 				E4705D372C99CAFA00FFD849 /* NavigationS.swift in Sources */,
 				E4705D2B2C997EF300FFD849 /* ImageGridView.swift in Sources */,
 				E49E7CD52C8FBC72000DAFA9 /* SearchBar.swift in Sources */,
 				E4705D312C997F3400FFD849 /* HomeView.swift in Sources */,
-				E470F8E42C8E833500E55EEF /* ContentView.swift in Sources */,
 				E4705D292C997EDB00FFD849 /* ImageView.swift in Sources */,
 				E4705D2D2C997F1900FFD849 /* SelectedImageView.swift in Sources */,
 				E4705D2F2C997F2600FFD849 /* TabBarView.swift in Sources */,
+				E43050E62CA026E300E7F70C /* SideBarMenuView.swift in Sources */,
 				E470F8E22C8E833500E55EEF /* PhotoGalleryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +498,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +528,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

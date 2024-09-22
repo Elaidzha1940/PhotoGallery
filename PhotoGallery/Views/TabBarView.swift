@@ -10,9 +10,9 @@
 import SwiftUI
 
 struct TabBarView: View {
-    @State var progress: CGFloat = 0.5
+    @State var progress: CGFloat = 0.4
     @State var selectedItem: TabIcon = .Home
-    @State var xOffset: CGFloat = 2 * 70.0
+    @State var xOffset: CGFloat = 3 * 70.0
     
     var body: some View {
         HStack {
@@ -38,15 +38,16 @@ struct TabBarView: View {
                     }
                 Spacer()
             }
+            .font(.system(size: 16, weight: .semibold))
             .frame(width: 23, height: 23)
         }
         .frame(maxWidth: UIScreen.main.bounds.width - 47.5)
-        .frame(height: 73)
+        .frame(height: 70)
         .background(.ultraThickMaterial)
-        .cornerRadius(20)
+        .cornerRadius(30)
         .overlay(alignment: .topLeading) {
             CustomCircleA(circleA: $progress)
-                .offset(x: 16.3, y: 17)
+                .offset(x: 16.5, y: 17)
                 .offset(x: xOffset)
         }
     }
