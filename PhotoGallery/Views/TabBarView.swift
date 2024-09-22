@@ -17,6 +17,7 @@ struct TabBarView: View {
     var body: some View {
         HStack {
             ForEach(sidebars) { item in
+                Spacer()
                 Image(systemName: item.icon)
                     .foregroundStyle(.black)
                     .onTapGesture {
@@ -29,7 +30,7 @@ struct TabBarView: View {
                         withAnimation {
                             progress = 0.0
                         }
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
                             withAnimation {
                                 progress = 0.5
                             }
@@ -39,11 +40,14 @@ struct TabBarView: View {
             }
             .frame(width: 23, height: 23)
         }
-        .frame(maxWidth: UIScreen.main.bounds.width - 40)
+        .frame(maxWidth: UIScreen.main.bounds.width - 47.5)
         .frame(height: 73)
         .background(.ultraThickMaterial)
+        .cornerRadius(20)
         .overlay(alignment: .topLeading) {
             CustomCircleA(circleA: $progress)
+                .offset(x: 16.3, y: 17)
+                .offset(x: xOffset)
         }
     }
 }
