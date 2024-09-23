@@ -41,7 +41,6 @@ struct TabBarView: View {
             .font(.system(size: 16, weight: .semibold))
             .frame(width: 23.3, height: 23)
         }
-//        .frame(maxWidth: UIScreen.main.bounds.width - 40)
         .frame(height: 73)
         .background(.ultraThickMaterial)
         .cornerRadius(30)
