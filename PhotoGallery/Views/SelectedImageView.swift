@@ -37,7 +37,7 @@ struct SelectedImageView: View {
                                 .font(.title3)
                         }
                         .foregroundStyle(.white)
-                        .frame(width: 165, height: 45)
+                        .frame(width: 165, height: 42)
                         .background(.black)
                         .cornerRadius(18)
                     }

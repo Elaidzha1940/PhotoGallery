@@ -66,6 +66,3 @@ struct ProfileView: View {
     }
 }
 
-//#Preview {
-//    MyView()
-//}

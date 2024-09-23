@@ -33,14 +33,14 @@ struct dataMode: Identifiable, Equatable {
 }
 
 var theImages = [
-    dataMode(name: "2", title: "Hey"),
-    dataMode(name: "1", title: "Hey"),
-    dataMode(name: "3", title: "Hey"),
-    dataMode(name: "6", title: "Hey"),
-    dataMode(name: "7", title: "Hey"),
-    dataMode(name: "4", title: "Hey"),
-    dataMode(name: "5", title: "Hey"),
-    dataMode(name: "8", title: "Hey")
+    dataMode(name: "2", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "1", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "3", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "6", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "7", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "4", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "5", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "8", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. ")
 ]
 
 var theImages1 = [
@@ -98,11 +98,11 @@ struct sideBars1: Identifiable {
 }
 
 let sidebars1 = [
-    sideBars1(icon: "house.fill", title: "Home", tab: .Home, index: 0),
-    sideBars1(icon: "creditcard.fill", title: "Notification", tab: .Notification, index: 1),
-    sideBars1(icon: "heart.fill", title: "Favorite", tab: .Favorite, index: 2),
-    sideBars1(icon: "cart.fill.badge.plus", title: "Purchases", tab: .Purchases, index: 3),
-    sideBars1(icon: "bell.badge.fill", title: "Favorite", tab: .Favorite, index: 4),
+    sideBars1(icon: "field.of.view.ultrawide.fill", title: "Top of day", tab: .Home, index: 0),
+    sideBars1(icon: "photo.artframe", title: "Art", tab: .Notification, index: 1),
+    sideBars1(icon: "location.north.fill", title: "Cities", tab: .Favorite, index: 2),
+    sideBars1(icon: "mountain.2.fill", title: "Nature", tab: .Purchases, index: 3),
+    sideBars1(icon: "moon.haze.fill", title: "Night", tab: .Favorite, index: 4),
 ]
 
 enum TabIcon1: String {

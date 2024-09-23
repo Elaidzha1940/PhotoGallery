@@ -32,8 +32,11 @@ struct SideBarMenuView: View {
                 TabViewView()
                 HStack {
                     Text("Learn more about the App")
+                        .font(.system(size: 16, weight: .medium, design: .rounded))
                         .padding(.leading)
+                    
                     Image(systemName: "camera.metering.unknown")
+                        .bold()
                 }
                 .foregroundStyle(.sb)
                 .padding(.top, 5)
@@ -74,10 +77,10 @@ struct UserImage: View {
                     .frame(width: 80, height: 80)
                     .foregroundStyle(.white)
                 
-                Image(systemName: "movieclapper")
+                Image(systemName: "tornado")
                     .frame(width: 60, height: 60)
                     .font(.system(size: 30, weight: .heavy, design: .rounded))
-                    .foregroundStyle(.sb)
+                    .foregroundStyle(.black.opacity(0.7))
             }
             
             VStack(alignment: .leading, spacing: 5) {
@@ -104,8 +107,8 @@ struct TabView1: View {
     var body: some View {
         ZStack(alignment: .leading) {
             Rectangle()
-                .frame(width: isAnimated ? 10 : 230, height: 45)
-                .foregroundStyle(.gray)
+                .frame(width: isAnimated ? 10 : 230, height: 48)
+                .foregroundStyle(.black.opacity(0.4))
                 .cornerRadius(10)
                 .offset(y: yOffset)
                 .padding(.vertical, 8)
@@ -139,7 +142,11 @@ struct TabView1: View {
                                 
                                 Image(systemName: item.icon)
                                     .font(.system(size: 18, weight: .bold, design: .rounded))
-                                    .foregroundStyle(.sb)
+                                    .foregroundStyle(
+                                        LinearGradient(colors: [.black.opacity(0.6), .white.opacity(0.5)],
+                                               startPoint: .topLeading,
+                                               endPoint: .bottomTrailing))
+                                    .shadow(color: .white, radius: 10, x: 0, y: 0)
                             }
                             
                             Text(item.title)
@@ -181,7 +188,7 @@ struct Dicon: View {
             
             Image(systemName: icon)
                 .font(.system(size: 18, weight: .bold, design: .rounded))
-                .foregroundStyle(.white.opacity(0.8))
+                .foregroundStyle(.white)
         }
     }
 }

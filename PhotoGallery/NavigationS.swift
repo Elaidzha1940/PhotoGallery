@@ -16,14 +16,24 @@ struct NavigationS: View {
                 Text("Hello, SwiftUI!")
             }
             .navigationBarBackButtonHidden(true)
-            .navigationBarTitleDisplayMode(.inline)
+//            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     VStack {
-                        Text("Finolog")
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Text("Finolog, Finolog")
                             .font(.headline)
-                        Text("Navigation Title")
+//                            .padding(.top, 30)
+
+                        Text("Navigation Title, Navigation Title")
                             .font(.subheadline)
+//                            .padding(.top, 40)
                     }
                     .foregroundColor(.white) // или другой цвет текста
                 }
