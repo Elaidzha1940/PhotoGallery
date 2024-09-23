@@ -41,7 +41,7 @@ struct HomeView: View {
             .offset(x: show ? 255 : 0)
             .overlay {
                 SideBarMenuView()
-                .offset(x: show ? 0 : -270)
+                    .offset(x: show ? 0 : -270)
             }
         }
     }
