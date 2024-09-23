@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct SideBar: View {   
+struct SideBar: View {
     @Binding var show: Bool
     
     var body: some View {

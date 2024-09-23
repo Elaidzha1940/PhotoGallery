@@ -1,9 +1,11 @@
+//  /*
 //
-//  TabViewView.swift
-//  PhotoGallery
+//  Project: PhotoGallery
+//  File: TabViewView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 17.09.2024
 //
-//  Created by Elaidzha Shchukin on 22.09.2024.
-//
+//  */
 
 import SwiftUI
 
@@ -13,15 +15,15 @@ struct TabViewView: View {
     
     var body: some View {
         TabView(selection: $selectedIndex) {
-            ImageViewV(image: "1")
+            ImageViewV(image: "15")
                 .tag(1)
-            ImageViewV(image: "2")
+            ImageViewV(image: "27")
                 .tag(2)
-            ImageViewV(image: "3")
+            ImageViewV(image: "33")
                 .tag(3)
             ImageViewV(image: "4")
                 .tag(4)
-            ImageViewV(image: "5")
+            ImageViewV(image: "23")
                 .tag(5)
         }
         .tabViewStyle(PageTabViewStyle())

@@ -1,9 +1,11 @@
+//  /*
 //
-//  SideBarMenuView.swift
-//  PhotoGallery
+//  Project: PhotoGallery
+//  File: SideBarMenuView.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 17.09.2024
 //
-//  Created by Elaidzha Shchukin on 22.09.2024.
-//
+//  */
 
 import SwiftUI
 
