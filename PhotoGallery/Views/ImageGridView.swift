@@ -25,7 +25,7 @@ struct ImageGridView: View {
                             Image(item.name)
                                 .resizable()
                                 .scaledToFill()
-                                .frame(width: 180, height: imageSelection.getHeight((theImages.firstIndex(of: item) ?? 0)))
+                                .frame(width: 180, height: imageSelection.getHeight1((theImages.firstIndex(of: item) ?? 0)))
                                 .cornerRadius(20)
                                 .padding(.vertical, 2)
                         }
@@ -33,7 +33,7 @@ struct ImageGridView: View {
                 }
                 
                 LazyVGrid(columns: columns, spacing: 0) {
-                    ForEach(theImages, id: \.id) { item in
+                    ForEach(theImages2, id: \.id) { item in
                         Button {
                             imageSelection.selectedData = item
                             imageSelection.showingSheet = true

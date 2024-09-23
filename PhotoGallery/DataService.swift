@@ -16,9 +16,9 @@ class ImageSelection: ObservableObject {
     func getHeight(_ index: Int) -> CGFloat {
         return index % 2 == 0 ? 180 : 300
     }
-    
+
     func getHeight1(_ index: Int) -> CGFloat {
-        return index % 1 == 2 ? 180 : 300
+        return index % 4 == 1 ? 300 : 180
     }
 }
 
@@ -33,36 +33,63 @@ struct dataMode: Identifiable, Equatable {
 }
 
 var theImages = [
-    dataMode(name: "2", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
-    dataMode(name: "1", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
-    dataMode(name: "3", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
-    dataMode(name: "6", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
-    dataMode(name: "7", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "31", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "28", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "26", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
     dataMode(name: "4", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
     dataMode(name: "5", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
-    dataMode(name: "8", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. ")
+    dataMode(name: "6", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "7", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "8", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "9", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "10", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "11", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "12", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "13", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "14", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "15", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "16", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "17", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "18", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "19", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. "),
+    dataMode(name: "20", title: "A wallpaper or background is a digital image used as a decorative background of a graphical user interface on the screen of a computer, smartphone or other electronic device. On a computer, wallpapers are generally used on the desktop, while on a mobile phone they serve as the background for the home screen. ")
 ]
 
 var theImages1 = [
-    dataMode(name: "8", title: "Hey"),
-    dataMode(name: "7", title: "Hey"),
+    dataMode(name: "10", title: "Hey"),
     dataMode(name: "6", title: "Hey"),
-    dataMode(name: "5", title: "Hey"),
-    dataMode(name: "4", title: "Hey"),
     dataMode(name: "3", title: "Hey"),
-    dataMode(name: "2", title: "Hey"),
-    dataMode(name: "1", title: "Hey")
+    dataMode(name: "28", title: "Hey"),
+    dataMode(name: "4", title: "Hey"),
+    dataMode(name: "7", title: "Hey"),
+    dataMode(name: "30", title: "Hey"),
+    dataMode(name: "26", title: "Hey"),
+    dataMode(name: "3", title: "Hey"),
+    dataMode(name: "15", title: "Hey"),
+    dataMode(name: "29", title: "Hey"),
+    dataMode(name: "4", title: "Hey")
 ]
 
 var theImages2 = [
-    dataMode(name: "1", title: "Hey"),
+    dataMode(name: "22", title: "Hey"),
+    dataMode(name: "33", title: "Hey"),
+    dataMode(name: "32", title: "Hey"),
+    dataMode(name: "31", title: "Hey"),
     dataMode(name: "2", title: "Hey"),
+    dataMode(name: "29", title: "Hey"),
     dataMode(name: "3", title: "Hey"),
-    dataMode(name: "4", title: "Hey"),
+    dataMode(name: "27", title: "Hey"),
+    dataMode(name: "26", title: "Hey"),
+    dataMode(name: "25", title: "Hey"),
+    dataMode(name: "24", title: "Hey"),
     dataMode(name: "5", title: "Hey"),
-    dataMode(name: "6", title: "Hey"),
+    dataMode(name: "22", title: "Hey"),
+    dataMode(name: "21", title: "Hey"),
     dataMode(name: "7", title: "Hey"),
-    dataMode(name: "8", title: "Hey"),
+    dataMode(name: "19", title: "Hey"),
+    dataMode(name: "9", title: "Hey"),
+    dataMode(name: "17", title: "Hey")
+
 ]
 
 struct sideBars: Identifiable {
