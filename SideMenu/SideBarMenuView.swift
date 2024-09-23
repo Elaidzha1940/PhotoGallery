@@ -17,8 +17,8 @@ struct SideBarMenuView: View {
         ZStack {
             LinearGradient(colors: [Color.orange.opacity(0.5), .black.opacity(0.5), .cyan.opacity(0.5)],
                            startPoint: .bottomLeading, endPoint: .topLeading)
-                .frame(width: 267)
-                .mask(RoundedRectangle(cornerRadius: 17, style: .continuous))
+            .frame(width: 267)
+            .mask(RoundedRectangle(cornerRadius: 17, style: .continuous))
             
             VStack(alignment: .leading) {
                 VStack(alignment: .leading) {
@@ -128,7 +128,7 @@ struct TabView1: View {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                             withAnimation {
                                 Text(item.title)
-//                                selectedItem = item.tab
+                                //                                selectedItem = item.tab
                                 yOffset = CGFloat(item.index) * 70
                             }
                         }
@@ -146,8 +146,8 @@ struct TabView1: View {
                                     .font(.system(size: 18, weight: .bold, design: .rounded))
                                     .foregroundStyle(
                                         LinearGradient(colors: [.black.opacity(0.6), .white.opacity(0.5)],
-                                               startPoint: .topLeading,
-                                               endPoint: .bottomTrailing))
+                                                       startPoint: .topLeading,
+                                                       endPoint: .bottomTrailing))
                                     .shadow(color: .white, radius: 10, x: 0, y: 0)
                             }
                             
