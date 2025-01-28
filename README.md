@@ -12,7 +12,6 @@
 - Custom TabBarView - A personalized tab bar with fluid transitions and precise icon placement.
 - Custom Smooth SearchBar - A sleek search bar with smooth interaction and UI customization.
 - Custom SideBar & TabView - Integrated side menu with tab functionality, allowing easy switching between different sections.
------
 
 https://github.com/user-attachments/assets/591efd66-f535-400f-b955-de2f44274a27
 
@@ -24,6 +23,7 @@ https://github.com/user-attachments/assets/591efd66-f535-400f-b955-de2f44274a27
 -----
 
 https://github.com/user-attachments/assets/6190ca05-40b4-468e-80c2-b6b519562064
+
 -----
 
 
